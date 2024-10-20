@@ -1,0 +1,29 @@
+1.1
+pwd
+ls ~/music/ will list all of the files in the ~/music/ directory, but 
+hidden files won’t be listed unless you use the -a tag.
+nano ~/music/patterns.txt
+cat ~/music/patterns.txt
+diff ~/music/patterns.txt ~/music/symmetry.txt
+mv ~/music/patterns.txt ~/math/calculus/
+rm ~/math/geometry/triangle.txt
+cd ../math/
+git init (when inside the math/ directory)
+git remote add origin (link to remote repository)
+cp ~/music/symmetry.txt ~/math/
+git status; symmetry.txt isn’t being tracked because it hasn’t been added 
+to the staging area yet.
+git add symmetry.txt
+Yes; git reset HEAD symmetry.txt
+git commit -m "added symmetry.txt to math/ repository"
+git push origin main; you should push to the main branch, since this is 
+the only branch in the directory system so far.
+git branch applied_math
+git checkout applied_math
+git add physics/, git commit -m "added physics directory with 
+mechanics.txt file", git push origin applied_math; the changes you made 
+will be saved, but they won’t be committed to a branch.
+git branch; the branch you’re currently in will be green.
+git branch main
+git merge applied_math
+(#23 screenshot included in final branch)
